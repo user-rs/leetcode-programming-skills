@@ -12,3 +12,14 @@ odd.push(arr[j])
 let oddCount = odd.length;
     return oddCount;
 }
+
+
+
+
+
+//Best Solution
+var countOdds = function(low, high) {
+    let odd = low%2 == 1 || high%2 === 1
+    let ans = Math.floor((high-low)/2)    
+    return odd ? ans +1 : ans  
+};
