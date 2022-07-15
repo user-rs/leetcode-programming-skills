@@ -1,0 +1,14 @@
+var countOdds = function(low, high) {
+let arr = []
+for (var i = low; i <= high; i++) {
+    arr.push(i);
+}
+let odd = []
+for(let i=0; i<arr.length; i++) {
+if(arr[i] % 2 !== 0){
+odd.push(arr[i])
+}
+}
+let oddCount = odd.length;
+    return oddCount;
+}
